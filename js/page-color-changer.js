@@ -7,4 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const blueSlider = document.getElementById('blue');
   const htmlElement = document.querySelector('html');
 
+  // Function to update the background color based on slider values
+  function updateBackgroundColor() {
+    const r = redSlider.value;
+    const g = greenSlider.value;
+    const b = blueSlider.value;
+    htmlElement.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  }
 });

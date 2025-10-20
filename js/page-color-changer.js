@@ -14,4 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const b = blueSlider.value;
     htmlElement.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   }
+    // Add event listeners to the sliders to update the background color on input 
+  redSlider.addEventListener('input', updateBackgroundColor);
+  greenSlider.addEventListener('input', updateBackgroundColor);
+  blueSlider.addEventListener('input', updateBackgroundColor);
+
+  updateBackgroundColor();
 });
